@@ -12,4 +12,42 @@
 ===================================================
 """
 
-# Write your code here
+def pro_digits(number):
+
+    # Chek if passed number is integer
+    if not isinstance(number, int):
+        return -1
+
+
+    digit_pro = 1
+
+
+
+
+    while number > 1:
+        digit = number % 10
+        number = number // 10
+        digit_pro *= digit
+
+    return digit_pro
+
+
+def main():
+
+    int_number = 1234
+    digit_pro = pro_digits(int_number)
+    print("Pro of digits for given numbers is: ", digit_pro)
+
+main()
+
+
+
+
+
+
+
+
+
+
+
+
