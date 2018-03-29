@@ -14,14 +14,28 @@
 *
 * Use main() function to test your solution.
 ===================================================
+
 """
+def area_of_circle(radius):
+    """
+    Calculates cube volume for given side.
+    Returns -1 if argument is not int or float
+    """
+    if (not isinstance(radius, int)) and (not isinstance(radius, float)):
+        return -1
 
-# Write your function here
 
 
 
-def main():
-    # Test your function here
-    pass
 
-main()
+    import math
+    return math.pi * radius **2
+
+radius  = 5.0
+circle = area_of_circle(radius)
+print("Area of circle is: ", circle)
+
+
+
+
+
