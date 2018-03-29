@@ -14,7 +14,22 @@
 ===================================================
 """
 
-# Write your function here
+def uvelikaslova(recenica):
+    nova_recenica = ""
+    for karakter in recenica:
+        broj_slova = ord(karakter)
+        if broj_slova > 96 and broj_slova < 123:
+            broj_velikog_slova = broj_slova -32
+            karakter = chr(broj_velikog_slova)
+
+        nova_recenica = nova_recenica + karakter
+    return nova_recenica
+recenica = input("Unesite recenicu:")
+recenica_velikim_slovima= uvelikaslova(recenica)
+print(recenica_velikim_slovima)
+
+
+
 
 
 
